@@ -1,12 +1,10 @@
 import React from 'react';
-import Header from '../../components/Header';
 import * as S from './style';
 import sneakerSS from './images/sneakerSS.png';
-import Button from '../../components/Button';
+import Button from '../Button';
 
 const Store = () => (
   <>
-    <Header />
     <div className="container">
       <div className="row">
         <div className="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
