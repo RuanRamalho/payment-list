@@ -1,4 +1,4 @@
-const fontSizes = [10, 12, 14, 16, 20, 24, 32, 40, 48];
+const fontSizes = [10, 12, 14, 16, 20, 22, 32, 40, 48];
 
 [
   fontSizes.xxsmall,

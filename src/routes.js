@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Store from './pages/Store';
+import Sneaker from './pages/Sneaker';
 
 const Routes = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/home" component={Store} />
+      <Route exact path="/home" component={Sneaker} />
     </Switch>
   </BrowserRouter>
 );
