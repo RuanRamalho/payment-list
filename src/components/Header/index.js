@@ -1,8 +1,14 @@
 import React from 'react';
+import * as S from './style';
+import perfil from './images/perfil.png';
 
 const Header = () => (
   <>
-    <h1>Chega mais!</h1>
+    <div className="container">
+      <S.Header>
+        <S.HeaderImage src={perfil} alt="Perfil" />
+      </S.Header>
+    </div>
   </>
 );
 
