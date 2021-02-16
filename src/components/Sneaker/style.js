@@ -8,9 +8,7 @@ export const SneakerCard = styled.div`
   border-radius: 8px;
 `;
 
-export const SneakerImage = styled.img`
-  width: 100%;
-`;
+export const SneakerImage = styled.img``;
 
 export const SneakerDescription = styled.div`
   h1 {
