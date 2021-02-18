@@ -1,33 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import Sneaker from '../../components/Sneaker';
+import React from 'react';
 import Header from '../../components/Header';
+import ItemsList from '../../components/ItemsList';
 
-const Store = () => {
-  const [items, setItems] = useState([]);
-
-  const loadProducts = async () => {
-    try {
-      const response = await fetch(
-        'http://voliveira.s3-sa-east-1.amazonaws.com/sneakers/index.json',
-      );
-      const data = await response.json();
-      setItems(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    loadProducts();
-  }, []);
-
-  return (
-    <>
-      <Header />
-      <Sneaker />
-      {console.log(items)};
-    </>
-  );
-};
+const Store = () => (
+  <>
+    <Header />
+    <ItemsList />
+  </>
+);
 
 export default Store;
