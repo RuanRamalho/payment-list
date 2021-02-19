@@ -12,18 +12,14 @@ const Sneaker = ({ id, description, price, thumb }) => (
           <div className="row justify-content-around">
             <S.SneakerContent>
               <label htmlFor="size">Size</label>
-              <select id="size" name="size">
-                <option value="36">36</option>
-                <option value="37">37</option>
-                <option value="38">38</option>
+              <select id="size" name="size" disabled>
+                <option value="41">41</option>
               </select>
             </S.SneakerContent>
             <S.SneakerContent>
               <label htmlFor="quantity">Quantity</label>
-              <select id="quantity" name="quantity">
+              <select id="quantity" name="quantity" disabled>
                 <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
               </select>
             </S.SneakerContent>
           </div>
