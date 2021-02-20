@@ -13,6 +13,11 @@ export const CheckoutGlobal = styled.div`
     margin-bottom: 0;
   }
 
+  h3,
+  span {
+    font-size: ${fontSizes.small}px;
+  }
+
   ${media.lg} {
     background: none;
   }
@@ -67,6 +72,14 @@ export const CheckoutCost = styled.div`
   }
 `;
 
+export const CheckoutDescriptionContent = styled.div`
+  ${media.lg} {
+    background: ${colors.darkGray};
+    padding: 15px 20px;
+    border-radius: 9px;
+  }
+`;
+
 export const CheckoutDescription = styled.div`
   h2 {
     font-size: ${fontSizes.large}px;
@@ -74,7 +87,6 @@ export const CheckoutDescription = styled.div`
 
   h3 {
     margin-top: 15px;
-    font-size: ${fontSizes.small}px;
   }
 
   h4 {
@@ -84,29 +96,30 @@ export const CheckoutDescription = styled.div`
   }
 
   span {
-    font-size: ${fontSizes.small}px;
     color: ${colors.gray};
   }
 
   ${media.lg} {
     display: flex;
     justify-content: space-between;
-    padding: 15px 20px;
-    background: #f2f2f2;
-    border-radius: 9px;
+
+    h2,
+    h4,
+    span {
+      font-size: ${fontSizes.medium}px;
+      font-weight: 400;
+    }
 
     h1 {
       font-size: ${fontSizes.xlarge}px;
       margin-bottom: 15px;
-    }
-
-    h2 {
-      font-size: ${fontSizes.small}px;
+      font-weight: 400;
     }
 
     h4 {
       font-size: ${fontSizes.medium}px;
       text-align: inherit;
+      font-weight: 400;
     }
   }
 `;
@@ -126,14 +139,16 @@ export const CheckoutCart = styled.div`
 export const CheckoutDetails = styled.div`
   h5 {
     text-align: end;
-    font-size: ${fontSizes.xxlarge}px;
+    font-size: ${fontSizes.xxxlarge}px;
     margin-top: 20px;
+    font-weight: 700;
   }
 
   ${media.lg} {
     h5 {
-      font-size: ${fontSizes.xxlarge}px;
+      font-size: ${fontSizes.huge}px;
       margin-left: 20px;
+      font-weight: 400;
     }
   }
 `;

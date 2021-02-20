@@ -5,6 +5,8 @@ const green = '#61CB46';
 const gray = '#8D8D8D';
 const darkGray = '#F7F7F7';
 const lightGray = '#E8E8E8';
+const golden = '#FFCC00';
+const hacienda = '#9E7D27';
 
 const colors = {
   white,
@@ -14,6 +16,8 @@ const colors = {
   gray,
   darkGray,
   lightGray,
+  golden,
+  hacienda,
 };
 
 export default colors;

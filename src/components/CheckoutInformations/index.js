@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from 'react';
+import PaymentMethods from '../PaymentMethods';
+import PaymentMethodsLg from '../PaymentMethodsLg';
 import * as S from './style';
 
 const CheckoutInformations = ({ id }) => {
@@ -37,32 +39,36 @@ const CheckoutInformations = ({ id }) => {
               </S.CheckoutCost>
             </div>
             <div className="col-7">
-              <S.CheckoutDescription>
-                <S.CheckoutCart>
-                  <h1>Cart Total</h1>
-                  <h2>{informations.description}</h2>
-                  <span>
-                    x 1, {informations.color}, Size 41 <br />
-                    Item {informations.id}
-                  </span>
-                </S.CheckoutCart>
-                <S.CheckoutDetails>
-                  <h3>Delivery details</h3>
-                  <span>John Smith</span> <br />
-                  <span>Phone no: 01312428200</span> <br />
-                  <span>Address: Redwood City, 2000.</span>
-                  <S.CheckoutDeliveryContent>
-                    <S.CheckoutDelivery>
-                      <h4>Total cost</h4>
-                      <span>Delivery included</span>
-                    </S.CheckoutDelivery>
-                    <h5>${informations.price}</h5>
-                  </S.CheckoutDeliveryContent>
-                </S.CheckoutDetails>
-              </S.CheckoutDescription>
+              <S.CheckoutDescriptionContent>
+                <S.CheckoutDescription>
+                  <S.CheckoutCart>
+                    <h1>Cart Total</h1>
+                    <h2>{informations.description}</h2>
+                    <span>
+                      x 1, {informations.color}, Size 41 <br />
+                      Item {informations.id}
+                    </span>
+                  </S.CheckoutCart>
+                  <S.CheckoutDetails>
+                    <h3>Delivery details</h3>
+                    <span>John Smith</span> <br />
+                    <span>Phone no: 01312428200</span> <br />
+                    <span>Address: Redwood City, 2000.</span>
+                    <S.CheckoutDeliveryContent>
+                      <S.CheckoutDelivery>
+                        <h4>Total cost</h4>
+                        <span>Delivery included</span>
+                      </S.CheckoutDelivery>
+                      <h5>${parseFloat(informations.price).toFixed(0)}</h5>
+                    </S.CheckoutDeliveryContent>
+                  </S.CheckoutDetails>
+                </S.CheckoutDescription>
+                <PaymentMethodsLg />
+              </S.CheckoutDescriptionContent>
             </div>
           </div>
         </S.CheckoutGlobal>
+        <PaymentMethods />
       </div>
     </>
   );
