@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import CheckoutInformations from '../../components/CheckoutInformations';
 import Header from '../../components/Header';
+import BreadCrumbs from '../../components/BreadCrumbs';
+import CheckoutInformations from '../../components/CheckoutInformations';
 
 const Checkout = () => {
   const { id } = useParams();
@@ -9,6 +10,7 @@ const Checkout = () => {
   return (
     <>
       <Header />
+      <BreadCrumbs />
       <CheckoutInformations id={id} />
     </>
   );
