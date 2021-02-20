@@ -9,7 +9,7 @@ const Checkout = () => {
 
   return (
     <>
-      <Header />
+      <Header>Checkout</Header>
       <BreadCrumbs />
       <CheckoutInformations id={id} />
     </>

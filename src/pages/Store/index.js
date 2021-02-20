@@ -4,7 +4,9 @@ import ItemsList from '../../components/ItemsList';
 
 const Store = () => (
   <>
-    <Header />
+    <Header none flex>
+      Sneakers
+    </Header>
     <ItemsList />
   </>
 );
