@@ -74,7 +74,7 @@ export const CheckoutCost = styled.div`
 
 export const CheckoutDescriptionContent = styled.div`
   ${media.lg} {
-    background: ${colors.darkGray};
+    background: ${colors.lightGray};
     padding: 15px 20px;
     border-radius: 9px;
   }
