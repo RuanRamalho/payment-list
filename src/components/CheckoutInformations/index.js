@@ -11,7 +11,7 @@ const CheckoutInformations = ({ id }) => {
   const loadProducts = async () => {
     try {
       const response = await fetch(
-        'http://voliveira.s3-sa-east-1.amazonaws.com/sneakers/index.json',
+        'https://voliveira.s3-sa-east-1.amazonaws.com/sneakers/index.json',
       );
       const { results } = await response.json();
       const data = results.find((item) => item.id === id);
