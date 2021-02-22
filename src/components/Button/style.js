@@ -3,6 +3,7 @@ import { colors } from '../../tokens';
 
 export const ButtonDefault = styled.div`
   width: 100%;
+  width: ${(props) => (props.resize ? '302px' : '100%')};
 
   a {
     width: 100%;

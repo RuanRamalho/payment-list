@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ButtonDefault } from './style';
 
-const Button = ({ children, id }) => (
-  <ButtonDefault>
-    <Link to={`/checkout/${id}`}>{children}</Link>
+const Button = ({ children, url, resize }) => (
+  <ButtonDefault resize={resize}>
+    <Link to={url}>{children}</Link>
   </ButtonDefault>
 );
 

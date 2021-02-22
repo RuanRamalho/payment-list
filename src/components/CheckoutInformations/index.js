@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from 'react';
+import RenderMyBank from '../../services/renderMyBank';
 import PaymentMethods from '../PaymentMethods';
 import PaymentMethodsLg from '../PaymentMethodsLg';
 import * as S from './style';
@@ -23,6 +24,16 @@ const CheckoutInformations = ({ id }) => {
   useEffect(() => {
     loadProducts();
   }, []);
+
+  const MyBank = ({ price, currency, idLoad = id }) => {
+    RenderMyBank.returnUrl = `/receipt/${idLoad}#success`;
+    RenderMyBank.amount = `${price}`;
+    RenderMyBank.currency = `${currency}`;
+  };
+
+  useEffect(() => {
+    MyBank(informations);
+  }, [informations]);
 
   return (
     <>

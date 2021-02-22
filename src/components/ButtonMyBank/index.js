@@ -2,6 +2,7 @@
 import React from 'react';
 import * as S from './style';
 import RenderMyBank from '../../services/renderMyBank';
+import '../../services/checkApproval';
 
 const ButtonMyBank = ({ desktop }) => (
   <S.ButtonContent>

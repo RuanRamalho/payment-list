@@ -25,7 +25,7 @@ const Sneaker = ({ id, description, price, thumb }) => (
           </div>
           <h2>{price}</h2>
           <S.SneakerContent>
-            <Button id={id}>Add to cart</Button>
+            <Button url={`/checkout/${id}`}>Add to cart</Button>
           </S.SneakerContent>
         </S.SneakerDescription>
       </S.SneakerCard>
