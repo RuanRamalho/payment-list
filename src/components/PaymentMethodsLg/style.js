@@ -30,7 +30,7 @@ export const PaymentContentLg = styled.div`
   }
 `;
 
-export const PaymentOptionsLg = styled.div`
+export const PaymentOptionsLg = styled.button`
   ${media.lg} {
     display: flex;
     background: ${colors.white};
@@ -40,8 +40,10 @@ export const PaymentOptionsLg = styled.div`
     margin-bottom: 15px;
     padding: 0 17px;
     height: 60px;
+    width: 100%;
+    border: 2px solid ${colors.white};
 
-    &:first-child {
+    &:focus {
       border: 2px solid ${colors.green};
     }
 

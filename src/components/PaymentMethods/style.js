@@ -24,7 +24,7 @@ export const PaymentContent = styled.div`
   margin-bottom: 15px;
 `;
 
-export const PaymentOptions = styled.div`
+export const PaymentOptions = styled.button`
   display: flex;
   background: ${colors.white};
   border-radius: 9px;
@@ -33,6 +33,12 @@ export const PaymentOptions = styled.div`
   margin-bottom: 15px;
   padding: 0 17px;
   height: 60px;
+  width: 100%;
+  border: 2px solid ${colors.white};
+
+  &:focus {
+    border: 2px solid ${colors.green};
+  }
 
   &:last-child {
     margin-bottom: 0;

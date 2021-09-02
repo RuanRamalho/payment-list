@@ -4,9 +4,10 @@ import * as S from './style';
 import RenderMyBank from '../../services/renderMyBank';
 import '../../services/checkApproval';
 
-const ButtonMyBank = ({ desktop }) => (
+const ButtonMyBank = ({ desktop, disabled }) => (
   <S.ButtonContent>
     <S.ButtonPayment
+      disabled={disabled}
       desktop={desktop}
       onClick={() => PayWithMyBank.establish(RenderMyBank)}
     >

@@ -17,4 +17,9 @@ export const ButtonPayment = styled.button`
   align-items: center;
   display: flex;
   border: none;
+
+  &:disabled {
+    background: #c9c9c9;
+    cursor: not-allowed;
+  }
 `;
