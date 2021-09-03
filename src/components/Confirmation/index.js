@@ -29,12 +29,12 @@ const Confirmation = ({ id }) => {
       <div className="container">
         <BreadCrumbs full />
         <div className="row">
-          <div className="col-5">
+          <div className="col-12 col-md-5">
             <S.ConfirmationImage>
               <img src={informations.maxresURL} alt="Shoes" />
             </S.ConfirmationImage>
           </div>
-          <div className="col-7">
+          <div className="col-12 col-md-7">
             <S.ConfirmationContent>
               <S.ConfirmationSummary>
                 <S.ConfirmationDescription>
@@ -48,7 +48,7 @@ const Confirmation = ({ id }) => {
                 <S.ConfirmationMethod>
                   <h1>Payment Method</h1>
                   <S.MethodContent>
-                    <img src={greenBank} alt="Banco Verde" />
+                    <img src={greenBank} alt="Green Bank" />
                     <h2>Online Banking</h2>
                   </S.MethodContent>
                 </S.ConfirmationMethod>
