@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { colors, fontSizes } from '../../tokens';
+import { colors, fontSizes, media } from '../../tokens';
 
 export const ConfirmationContent = styled.div`
   background: ${colors.lightGray};
   height: 100%;
-  padding-top: 64px;
+  padding: 30px;
   border-radius: 11px;
 
   h1 {
@@ -20,6 +20,10 @@ export const ConfirmationContent = styled.div`
     font-size: ${fontSizes.medium}px;
     color: ${colors.gray};
   }
+
+  ${media.md} {
+    padding-top: 64px;
+  }
 `;
 
 export const ConfirmationSummary = styled.div`
@@ -28,9 +32,15 @@ export const ConfirmationSummary = styled.div`
 `;
 
 export const ConfirmationImage = styled.div`
+  margin-bottom: 20px;
+
   img {
     width: 100%;
     border-radius: 11px;
+  }
+
+  ${media.md} {
+    margin-bottom: 0;
   }
 `;
 
@@ -50,12 +60,25 @@ export const MethodContent = styled.div`
 
 export const ConfirmationCost = styled.div`
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   margin-top: 83px;
 
+  h2 {
+    text-align: center;
+  }
+
   h3 {
-    font-size: ${fontSizes.huge}px;
+    font-size: ${fontSizes.xlarge}px;
+  }
+
+  ${media.md} {
+    flex-direction: row;
+    justify-content: space-between;
+
+    h3 {
+      font-size: ${fontSizes.huge}px;
+    }
   }
 `;
 
