@@ -27,7 +27,7 @@ const PaymentMethodsLg = () => {
 
           <S.PaymentOptionsLg onClick={() => setisOnlineBank(false)}>
             <S.PaymentDescriptionLg>
-              <p>Online Baking</p>
+              <p>Card Payment</p>
             </S.PaymentDescriptionLg>
             <S.PaymentImagesLg>
               <img src={cardPayment} alt="Card Payment" />
@@ -36,7 +36,7 @@ const PaymentMethodsLg = () => {
 
           <S.PaymentOptionsLg onClick={() => setisOnlineBank(false)}>
             <S.PaymentDescriptionLg>
-              <p>Online Baking</p>
+              <p>Apple Play</p>
             </S.PaymentDescriptionLg>
             <S.PaymentImagesLg>
               <img src={applePay} alt="Apple Play" />
